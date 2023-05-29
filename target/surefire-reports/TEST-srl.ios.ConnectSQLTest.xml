@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="srl.ios.ConnectSQLTest" time="0.004" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="20"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="F:\zzFile Personali\iossrl\Tirocinio\jdbctests\target\test-classes;F:\zzFile Personali\iossrl\Tirocinio\jdbctests\target\classes;C:\Users\Satan\.m2\repository\org\jacoco\jacoco-maven-plugin\0.8.10\jacoco-maven-plugin-0.8.10.jar;C:\Users\Satan\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.24\plexus-utils-3.0.24.jar;C:\Users\Satan\.m2\repository\org\apache\maven\shared\file-management\1.2.1\file-management-1.2.1.jar;C:\Users\Satan\.m2\repository\org\apache\maven\maven-plugin-api\2.0.6\maven-plugin-api-2.0.6.jar;C:\Users\Satan\.m2\repository\org\apache\maven\shared\maven-shared-io\1.1\maven-shared-io-1.1.jar;C:\Users\Satan\.m2\repository\org\apache\maven\maven-artifact\2.0.2\maven-artifact-2.0.2.jar;C:\Users\Satan\.m2\repository\org\apache\maven\maven-artifact-manager\2.0.2\maven-artifact-manager-2.0.2.jar;C:\Users\Satan\.m2\repository\org\apache\maven\maven-repository-metadata\2.0.2\maven-repository-metadata-2.0.2.jar;C:\Users\Satan\.m2\repository\org\apache\maven\wagon\wagon-provider-api\1.0-alpha-6\wagon-provider-api-1.0-alpha-6.jar;C:\Users\Satan\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-9\plexus-container-default-1.0-alpha-9.jar;C:\Users\Satan\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\Satan\.m2\repository\classworlds\classworlds\1.1-alpha-2\classworlds-1.1-alpha-2.jar;C:\Users\Satan\.m2\repository\org\apache\maven\reporting\maven-reporting-api\3.0\maven-reporting-api-3.0.jar;C:\Users\Satan\.m2\repository\org\apache\maven\doxia\doxia-sink-api\1.0\doxia-sink-api-1.0.jar;C:\Users\Satan\.m2\repository\org\jacoco\org.jacoco.agent\0.8.10\org.jacoco.agent-0.8.10-runtime.jar;C:\Users\Satan\.m2\repository\org\jacoco\org.jacoco.core\0.8.10\org.jacoco.core-0.8.10.jar;C:\Users\Satan\.m2\repository\org\ow2\asm\asm\9.5\asm-9.5.jar;C:\Users\Satan\.m2\repository\org\ow2\asm\asm-commons\9.5\asm-commons-9.5.jar;C:\Users\Satan\.m2\repository\org\ow2\asm\asm-tree\9.5\asm-tree-9.5.jar;C:\Users\Satan\.m2\repository\org\jacoco\org.jacoco.report\0.8.10\org.jacoco.report-0.8.10.jar;C:\Users\Satan\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\Satan\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Satan\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Satan\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\Satan\.m2\repository\mysql\mysql-connector-java\8.0.30\mysql-connector-java-8.0.30.jar;C:\Users\Satan\.m2\repository\com\google\protobuf\protobuf-java\3.19.4\protobuf-java-3.19.4.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Rome"/>
+    <property name="user.country.format" value="IT"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="20"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-20\bin"/>
+    <property name="sun.java.command" value="C:\Users\Satan\AppData\Local\Temp\surefire9038524866477329493\surefirebooter10705687637853339193.jar C:\Users\Satan\AppData\Local\Temp\surefire9038524866477329493 2023-05-29T17-50-39_722-jvmRun1 surefire15226286977716773740tmp surefire_08951637815729903396tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="F:\zzFile Personali\iossrl\Tirocinio\jdbctests\target\test-classes;F:\zzFile Personali\iossrl\Tirocinio\jdbctests\target\classes;C:\Users\Satan\.m2\repository\org\jacoco\jacoco-maven-plugin\0.8.10\jacoco-maven-plugin-0.8.10.jar;C:\Users\Satan\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.24\plexus-utils-3.0.24.jar;C:\Users\Satan\.m2\repository\org\apache\maven\shared\file-management\1.2.1\file-management-1.2.1.jar;C:\Users\Satan\.m2\repository\org\apache\maven\maven-plugin-api\2.0.6\maven-plugin-api-2.0.6.jar;C:\Users\Satan\.m2\repository\org\apache\maven\shared\maven-shared-io\1.1\maven-shared-io-1.1.jar;C:\Users\Satan\.m2\repository\org\apache\maven\maven-artifact\2.0.2\maven-artifact-2.0.2.jar;C:\Users\Satan\.m2\repository\org\apache\maven\maven-artifact-manager\2.0.2\maven-artifact-manager-2.0.2.jar;C:\Users\Satan\.m2\repository\org\apache\maven\maven-repository-metadata\2.0.2\maven-repository-metadata-2.0.2.jar;C:\Users\Satan\.m2\repository\org\apache\maven\wagon\wagon-provider-api\1.0-alpha-6\wagon-provider-api-1.0-alpha-6.jar;C:\Users\Satan\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-9\plexus-container-default-1.0-alpha-9.jar;C:\Users\Satan\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\Satan\.m2\repository\classworlds\classworlds\1.1-alpha-2\classworlds-1.1-alpha-2.jar;C:\Users\Satan\.m2\repository\org\apache\maven\reporting\maven-reporting-api\3.0\maven-reporting-api-3.0.jar;C:\Users\Satan\.m2\repository\org\apache\maven\doxia\doxia-sink-api\1.0\doxia-sink-api-1.0.jar;C:\Users\Satan\.m2\repository\org\jacoco\org.jacoco.agent\0.8.10\org.jacoco.agent-0.8.10-runtime.jar;C:\Users\Satan\.m2\repository\org\jacoco\org.jacoco.core\0.8.10\org.jacoco.core-0.8.10.jar;C:\Users\Satan\.m2\repository\org\ow2\asm\asm\9.5\asm-9.5.jar;C:\Users\Satan\.m2\repository\org\ow2\asm\asm-commons\9.5\asm-commons-9.5.jar;C:\Users\Satan\.m2\repository\org\ow2\asm\asm-tree\9.5\asm-tree-9.5.jar;C:\Users\Satan\.m2\repository\org\jacoco\org.jacoco.report\0.8.10\org.jacoco.report-0.8.10.jar;C:\Users\Satan\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\Satan\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Satan\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Satan\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\Satan\.m2\repository\mysql\mysql-connector-java\8.0.30\mysql-connector-java-8.0.30.jar;C:\Users\Satan\.m2\repository\com\google\protobuf\protobuf-java\3.19.4\protobuf-java-3.19.4.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Satan"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-04-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-20"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="F:\zzFile Personali\iossrl\Tirocinio\jdbctests"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Satan\AppData\Local\Temp\surefire9038524866477329493\surefirebooter10705687637853339193.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="20.0.1+9-29"/>
+    <property name="user.name" value="Satan"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Satan\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Satan\AppData\Local\Temp\"/>
+    <property name="java.version" value="20.0.1"/>
+    <property name="user.dir" value="F:\zzFile Personali\iossrl\Tirocinio\jdbctests"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.language.format" value="it"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-20\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\Satan\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Satan\bin;C:\Python311\Lib\site-packages\PyQt5\Qt5\bin;C:\Python311\Lib\site-packages\PyQt5\Qt5\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts;C:\Python311;F:\C++WA\mingw64\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Calibre2;C:\Program Files\Git\cmd;C:\Program Files\dotnet;C:\ProgramData\chocolatey\bin;F:\Programs\NodeJs;C:\Program Files\php-8.2.1;C:\ProgramData\ComposerSetup\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Java\jdk1.8.0_202\bin;F:\Programs\apache-maven-3.9.1\bin;C:\Program Files\Java\jdk-20\bin;C:\Users\Satan\.cargo\bin;C:\Users\Satan\AppData\Local\Microsoft\WindowsApps;C:\Users\Satan\AppData\Local\atom\bin;C:\Users\Satan\AppData\Local\Microsoft\WindowsApps;F:\Programs\Microsoft VS Code\bin;C:\Users\Satan\AppData\Roaming\npm;C:\Users\Satan\AppData\Roaming\Composer\vendor\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="20.0.1+9-29"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="64.0"/>
+  </properties>
+  <testcase name="srl.ios.ConnectSQLTest.testQueries" classname="srl.ios.ConnectSQLTest" time="0.001">
+    <failure message="The url cannot be null" type="java.sql.SQLException">java.sql.SQLException: The url cannot be null
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:666)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at srl.ios.ConnectSQL.connect(ConnectSQL.java:16)
+	at srl.ios.ConnectSQL.runTestStatement(ConnectSQL.java:21)
+	at srl.ios.ConnectSQLTest.testQueries(ConnectSQLTest.java:11)
+</failure>
+  </testcase>
+</testsuite>

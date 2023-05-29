@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: srl.ios.ConnectSQLTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.004 s <<< FAILURE! - in srl.ios.ConnectSQLTest
+srl.ios.ConnectSQLTest.testQueries()  Time elapsed: 0.001 s  <<< FAILURE!
+java.sql.SQLException: The url cannot be null
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:666)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at srl.ios.ConnectSQL.connect(ConnectSQL.java:16)
+	at srl.ios.ConnectSQL.runTestStatement(ConnectSQL.java:21)
+	at srl.ios.ConnectSQLTest.testQueries(ConnectSQLTest.java:11)
+

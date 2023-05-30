@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-public class DbEnvReaderTest extends StaticDbEnvReader {
+public class StaticDbEnvReaderTest extends StaticDbEnvReader {
     @Test
     public void checkPW() {
         assertEquals(getDbPassword(), "root");

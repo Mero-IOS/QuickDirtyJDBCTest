@@ -5,17 +5,12 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public final class ConnectSQL implements AutoCloseable {
+public final class StaticConnectSQL implements AutoCloseable {
     private static Connection dbConnected;
-    private static DbEnvReader storedEnv = null;
-
-    private static void setStoredEnv() {
-        storedEnv = new DbEnvReader();
-    }
 
     private static void connect() throws SQLException {
-        dbConnected = DriverManager.getConnection(storedEnv.getDbUrl(), storedEnv.getDbUser(),
-                storedEnv.getDbPassword());
+        dbConnected = DriverManager.getConnection(StaticDbEnvReader.getDbUrl(), StaticDbEnvReader.getDbUser(),
+                StaticDbEnvReader.getDbPassword());
     }
 
     public static void disconnect() throws SQLException {
@@ -23,9 +18,6 @@ public final class ConnectSQL implements AutoCloseable {
     }
 
     protected static void runTestStatement(String query) throws SQLException {
-        if (dbConnected == null) {
-            ConnectSQL.setStoredEnv();
-        }
         if (dbConnected == null || dbConnected.isClosed()) {
             connect();
         }

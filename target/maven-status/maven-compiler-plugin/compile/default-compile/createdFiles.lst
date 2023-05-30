@@ -1,2 +1,2 @@
-srl\ios\ConnectSQL.class
-srl\ios\DbEnvReader.class
+srl\ios\StaticConnectSQL.class
+srl\ios\StaticDbEnvReader.class

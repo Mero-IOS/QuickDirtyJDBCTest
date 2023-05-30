@@ -11,7 +11,7 @@ public class ConnectSQLTest {
     @Test
     public void testQueries() throws SQLException {
 
-        ConnectSQL.runTestStatement(
+        StaticConnectSQL.runTestStatement(
                 "CREATE TABLE test " +
                         "(id INTEGER not NULL, " +
                         " name VARCHAR(255), " +
@@ -22,7 +22,7 @@ public class ConnectSQLTest {
 
     @Test
     public void testDelete() throws SQLException {
-        ConnectSQL.runTestStatement(
+        StaticConnectSQL.runTestStatement(
                 "DROP TABLE test");
     }
 }

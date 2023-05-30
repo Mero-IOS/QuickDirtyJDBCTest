@@ -18,6 +18,7 @@ public class ConnectSQLTest {
                         "(id INTEGER not NULL, " +
                         " name VARCHAR(255), " +
                         " PRIMARY KEY ( id ))");
+
         connection.runTestStatement(
                 "DROP TABLE test");
 

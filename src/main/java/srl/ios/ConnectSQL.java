@@ -5,15 +5,26 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class ConnectSQL implements ReadEnv {
-    static final String url = ReadEnv.getDbUrl();
-    static final String username = ReadEnv.getDbUser();
-    static final String password = ReadEnv.getDbPassword();
+public class ConnectSQL {
 
     Connection dbConnected;
+    DbEnvReader storedEnv;
+
+    public ConnectSQL() {
+        storedEnv = new DbEnvReader();
+    }
+
+    public ConnectSQL(DbEnvReader dbEnv) {
+        storedEnv = dbEnv;
+    }
 
     private void connect() throws SQLException {
-        dbConnected = DriverManager.getConnection(url, username, password);
+        dbConnected = DriverManager.getConnection(storedEnv.getDbUrl(), storedEnv.getDbUser(),
+                storedEnv.getDbPassword());
+    }
+
+    public void disconnect() throws SQLException {
+        dbConnected.close();
     }
 
     protected void runTestStatement(String query) throws SQLException {

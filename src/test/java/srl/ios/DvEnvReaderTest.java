@@ -4,19 +4,19 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-public class ReadEnvTest implements ReadEnv {
+public class DvEnvReaderTest extends DbEnvReader {
     @Test
     public void checkPW() {
-        assertEquals(ReadEnv.getDbPassword(), "root");
+        assertEquals(getDbPassword(), "root");
     }
 
     @Test
     public void checkUser() {
-        assertEquals(ReadEnv.getDbUser(), "root");
+        assertEquals(getDbUser(), "root");
     }
 
     @Test
     public void checkUrl() {
-        assertEquals(ReadEnv.getDbUrl(), "jdbc:mysql://127.0.0.1/jdbc");
+        assertEquals(getDbUrl(), "jdbc:mysql://127.0.0.1/jdbc");
     }
 }
